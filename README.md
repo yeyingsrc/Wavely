@@ -29,10 +29,10 @@
 
 
 
-## 1、📦  安装指南
+## 1、安装指南
 💡 提示：关于安装与使用的常见问题，请参阅文末的[常见问题](#常见问题)部分。
 
-###  MacOS（安装 / 更新）
+### MacOS（安装 / 更新）
 
 - 将 Wavely.app 拖入 Applications 文件夹
 - 打开终端执行以下命令以移除系统隔离属性：
@@ -41,7 +41,7 @@
 sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ```
 
-###  💻 Windows （安装 / 更新）
+###  Windows （安装 / 更新）
 
 - 下载最新压缩包并解压
 - 运行 Wavely-windows-installer.exe 完成安装
@@ -53,7 +53,7 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 - 请参考官方激活说明：
 🔗 [Wavely 激活指南：https://github.com/perlh/Wavely/wiki](https://github.com/perlh/Wavely/wiki)
 
-激活码仅可成功激活一次，激活后会在 ~/.wavely/license 生成许可证文件
+激活码仅可成功激活一次，激活后会在本地生成许可证文件
 
 |平台 |路径|
 |-|-|
@@ -65,36 +65,28 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 > - 补充说明：v3.2.6 及以上版本可随意安装，无此限制。
 
 
-#### 📍 License 文件位置
 
-
-
-
-### 🌐 DNSLog 配置说明
+### DNSLog 配置说明
 - 默认使用 Nuclei 官方 Interactsh 服务（无需额外配置）
 - 如需使用私有 DNSLog，请参考官方搭建指南：
 👉 [Interactsh 搭建文档](https://github.com/projectdiscovery/interactsh)
 
 
+## 3、基本使用
 
-
-> ❗ 重要：该文件是您唯一的本地授权凭证，一旦丢失将无法自动恢复。如不慎遗失，请通过邮箱联系开发者。
-
-## 🚀 基本使用
-
-
-### ➕ 2.2 导入 POC（v3.2.4+）
+### 3.1 导入 POC
 - 将包含 POC 的文件夹直接拖拽至主窗口，即可批量导入
 
 ![POC 导入](imgs/3.2.5/3.png)
 ![导入成功](imgs/3.2.5/7.png)
 
-### ✏️ 2.3 添加 POC
-![添加 POC](imgs/img/11.png)
-### ✏️ 2.4 编辑 POC
+### 3.2 添加 POC
+![添加 POC](imgs/3.2.8//6.png)
+
+### 3.3 编辑 POC
 ![编辑 POC](imgs/3.2.5/2.png)
 
-### 🕵️ 2.5 抓包工具
+### 3.4  抓包工具
 - 编辑模板
 
 ![编辑模板](imgs/img/2.png)
@@ -109,7 +101,7 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ### 🔁 请求包重放
 ![请求包重放](imgs/3.2.8/1.png)
 
-### 🌐 2.6 全局请求头
+### 3.5 🌐 全局请求头
 - 配置界面
 
 ![全局请求头1](imgs/img/6.png)
@@ -120,11 +112,11 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ![请求头详情](imgs/3.2.5/6.png)
 
 
-## ❓ 常见问题
-### ❓ Windows 启动时短暂出现命令框？
+## 4、常见问题
+###  Windows 启动时短暂出现命令框？
 ✅ 属于正常现象，不影响功能，可放心使用
 
-### ❓ macOS 无法打开 App？
+### macOS 无法打开 App？
 由于未使用 Apple 官方证书签名，可能出现以下提示：
 - “已损坏，无法打开”
 - “无法验证开发者身份”
@@ -159,5 +151,6 @@ chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 </div>
 你的支持是我们持续维护和迭代的动力，感谢每一位用户 🙏
 
-📌 项目地址：[github.com/perlh/Wavely](https://github.com/perlh/Wavely)
-📩 反馈与激活问题：id_0909186@foxmail.com
+
+- 📌 项目地址：[github.com/perlh/Wavely](https://github.com/perlh/Wavely)
+- 📩 反馈与激活问题：id_0909186@foxmail.com
